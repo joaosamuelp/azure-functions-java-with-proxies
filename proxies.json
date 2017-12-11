@@ -1,0 +1,11 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "Reports - GetFile": {
+            "matchCondition": {
+                "route": "/report/getFile/{idResource}"
+            },
+            "backendUri": "https://pix-hackfest-pdf.azurewebsites.net/api/report-getFile?idResource={idResource}"
+        }
+    }
+}
